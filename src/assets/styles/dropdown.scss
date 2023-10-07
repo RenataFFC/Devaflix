@@ -1,0 +1,91 @@
+@import './configs.scss';
+
+.DropdownMenu {
+  //background-color: rgba(137, 126, 215, 0.52);
+  background-color: rgba(137, 126, 215, 1);
+  width: 368px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -270px;
+  color: $WhiteColor;
+  list-style: none;
+  margin: 0; 
+  text-align:start;
+}
+  span{
+    margin-left: 10px;
+  }
+
+
+.Dropdown-li {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.Dropdown-li span{
+   margin-top: 10px;
+}
+
+.DropdownSpan {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  padding: 10px;
+}
+
+.Dropdown-li:nth-child(2) {
+  margin-top: 15px;
+}
+
+.Dropdown-li:nth-child(5) {
+  border-bottom: none;
+}
+
+.open .DropdownMenu {
+  display: block;
+}
+
+.NavbarDropdown {
+  position: relative;
+  display: inline-block;
+  background-color: $WhiteColor;
+  color: $PrimaryColor;
+}
+
+button.BtnDropdown {
+  color: $PrimaryColor;
+  background-color: transparent;
+  cursor: pointer; 
+  margin-top: 0px;
+  }
+
+  @media screen and (min-width: $DesktopBreakpoint) {
+    .DropdownMenu {
+      left: -100px;
+
+    }
+    .Dropdown-li{
+      margin-left: 0px;
+      gap: 0px;
+     padding-bottom: 3px;
+    }
+
+    .Dropdown-li:nth-child(6) {
+      border-bottom: 20px;
+    }
+
+    
+
+
+         
+
+  }
+
+ 
+
+ 
